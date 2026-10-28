@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import type { Photo } from "../data/photos";
 import { useLocale } from "../lib/i18n";
+import { assetUrl } from "../lib/assets";
 export default function GalleryGrid({ items }: { items: Photo[] }) {
   const { lang, t } = useLocale();
   const [selected, setSelected] = useState<number | null>(null);
@@ -40,7 +41,7 @@ export default function GalleryGrid({ items }: { items: Photo[] }) {
             }}
           >
             <img
-              src={photo.src}
+              src={assetUrl(photo.src)}
               alt={photo.alt[lang]}
               width={photo.width}
               height={photo.height}
@@ -69,7 +70,10 @@ export default function GalleryGrid({ items }: { items: Photo[] }) {
         </button>
         {selected !== null && (
           <>
-            <img src={items[selected].src} alt={items[selected].alt[lang]} />
+            <img
+              src={assetUrl(items[selected].src)}
+              alt={items[selected].alt[lang]}
+            />
             <div className="lightbox-controls">
               <button
                 className="icon-button"

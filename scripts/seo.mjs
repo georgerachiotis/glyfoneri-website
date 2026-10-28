@@ -1,4 +1,4 @@
-import { writeFileSync } from "node:fs";
+import { copyFileSync, writeFileSync } from "node:fs";
 import { loadEnv } from "vite";
 const env = loadEnv("production", process.cwd(), "VITE_");
 const base = (env.VITE_SITE_URL || "").replace(/\/$/, "");
@@ -26,3 +26,6 @@ writeFileSync(
   `User-agent: *\nDisallow: /\n${base ? "Sitemap: " + base + "/sitemap.xml\n" : ""}`,
 );
 writeFileSync("dist/_redirects", "/* /index.html 200\n");
+// GitHub Pages serves this file for deep links, allowing BrowserRouter to resume.
+copyFileSync("dist/index.html", "dist/404.html");
+writeFileSync("dist/.nojekyll", "");

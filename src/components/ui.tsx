@@ -14,6 +14,7 @@ import { Link } from "react-router-dom";
 import { useLocale } from "../lib/i18n";
 import { property } from "../config/property";
 import type { Accommodation } from "../data/accommodation";
+import { assetUrl } from "../lib/assets";
 export function BookingLink({
   className = "button",
   children,
@@ -49,7 +50,7 @@ export function Placeholder({
   return (
     <figure className={`placeholder ${hero ? "hero-image" : ""}`}>
       <img
-        src={src}
+        src={assetUrl(src)}
         alt={alt || (isPlaceholder ? t.placeholder : "Glyfoneri Maizonettes")}
         width={1600}
         height={1000}
