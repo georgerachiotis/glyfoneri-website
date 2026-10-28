@@ -1,0 +1,127 @@
+export const en = {
+  nav: ["Home", "Accommodation", "Gallery", "Location", "Contact"],
+  book: "Book your stay",
+  external: "Opens Booking.com in a new tab",
+  explore: "View the photos",
+  details: "View details",
+  allStays: "All accommodation",
+  place: "GLYFA · FTHIOTIDA · GREECE",
+  hero: "Your seaside escape in Glyfa.",
+  heroText:
+    "A little closer to the sea. A little further from the everyday. Welcome to Glyfoneri Maizonettes.",
+  eyebrow: "AT THE WATER’S EDGE",
+  introTitle: "Slow mornings.\nSalt in the air.",
+  intro:
+    "Four maisonettes in Glyfa, with quiet moments by the sea and a place of your own for the holidays.",
+  staysTitle: "Find your place by the sea.",
+  staysText:
+    "Four maisonettes for unhurried days in Glyfa.",
+  experienceTitle: "Let the sea set the pace.",
+  experience:
+    "An unhurried morning. A swim when you feel like it. Time together, with the sea close by. Discover the simple rhythm of a stay in Glyfa.",
+  amenitiesTitle: "The comforts that matter.",
+  amenities: [
+    "Beachfront",
+    "Sea views",
+    "Free Wi-Fi",
+    "Parking",
+    "Air conditioning",
+    "Kitchen / kitchenette",
+    "Private bathroom",
+    "Balcony / terrace",
+    "Garden",
+  ],
+  galleryTitle: "A glimpse of Glyfoneri.",
+  galleryText: "A place for seaside days and quiet moments.",
+  galleryLink: "Explore the gallery",
+  filters: ["All", "Accommodation", "Sea & Beach", "Outdoor Spaces", "Views"],
+  placeholder: "Development placeholder · property photograph pending",
+  galleryNotice:
+    "Explore the maisonettes, garden and views towards the sea.",
+  locationTitle: "Meet you in Glyfa.",
+  locationText:
+    "Find Glyfoneri in the seaside village of Glyfa, Fthiotida. Plan your arrival with the property and use the map link for directions.",
+  directions: "Get directions",
+  arrival: "Before you travel",
+  arrivalText:
+    "Please contact the property to confirm arrival instructions, check-in times, parking arrangements and any accessibility needs.",
+  ctaTitle: "Your next chapter, beside the sea.",
+  ctaText: "Explore availability, prices and terms for your stay.",
+  contact: "Get in touch",
+  contactTitle: "Let’s plan your stay.",
+  contactText:
+    "For questions about your visit, call us at the number below.",
+  contactPhoneTitle: "Contact by phone",
+  availability: "AVAILABILITY",
+  contactBookingTitle: "Plan your stay",
+  contactBookingText: "Prices, availability and booking terms on our official listing.",
+  emailPending: "Official email to be added.",
+  formTitle: "A note about your stay",
+  formUnavailable:
+    "Online inquiries are not connected yet. This form cannot send a message. Please call the property or use Booking.com.",
+  validate: "Check inquiry details",
+  validated:
+    "Your details are valid, but nothing has been sent. Please contact the property by phone or Booking.com.",
+  fields: {
+    name: "Full name",
+    email: "Email",
+    phone: "Phone (optional)",
+    checkIn: "Check-in",
+    checkOut: "Check-out",
+    adults: "Adults",
+    children: "Children",
+    message: "Your message",
+    consent: "I agree to the Privacy Policy.",
+  },
+  errors: {
+    required: "Please complete this field.",
+    email: "Enter a valid email address.",
+    date: "Enter a valid date.",
+    past: "Choose today or a future date.",
+    checkout: "Check-out must be after check-in.",
+    adults: "Enter at least one adult, using a whole number.",
+    children: "Enter zero or more children, using a whole number.",
+    limit: "Please contact the property for this group size.",
+    consent: "Please accept the privacy policy.",
+  },
+  provisional:
+    "All four units are maisonettes. Please confirm the exact layout, amenities and suitability with the property before booking.",
+  detailsPending:
+    "Capacity, beds, room size, floor layout and accessibility will be added after owner confirmation.",
+  stayNames: ["Maisonettes"],
+  stayDescriptions: [
+    "Enjoy your stay in Glyfa, steps from the sea. Contact us to confirm the layout and sleeping arrangements.",
+  ],
+  stayUnitLabel: "maisonettes",
+  legal: ["Privacy Policy", "Cookie Policy", "Terms & booking information"],
+  legalNotice: "Draft placeholder — not approved legal text.",
+  legalText:
+    "For prices, availability and current booking terms, please consult the official Booking.com listing.",
+  privacyText:
+    "This website has no contact form and does not collect visitor details. Your language preference is stored only in your browser.",
+  cookieText:
+    "This site uses local storage only to remember your language choice. It does not use analytics, advertising cookies or embedded maps.",
+  footer: "Seaside stays in Glyfa, Greece.",
+  copyright: "All rights reserved.",
+  preview: "Development preview · original photos and owner details pending",
+  skip: "Skip to content",
+  menu: "Open menu",
+  close: "Close",
+  previous: "Previous image",
+  next: "Next image",
+  image: "Image",
+  notFound: "A little off course.",
+  notFoundText: "We couldn’t find this page. Let’s take you back to the shore.",
+  back: "Back to home",
+  loading: "Loading…",
+  amenitiesNote:
+    "Facilities mentioned in public listings. Availability by accommodation must be confirmed.",
+  seo: [
+    "Beachfront accommodation in Glyfa",
+    "Four maisonettes in Glyfa",
+    "Gallery of Glyfoneri",
+    "Find Glyfoneri in Glyfa",
+    "Contact Glyfoneri Maizonettes",
+  ],
+};
+export type Dictionary = typeof en;
